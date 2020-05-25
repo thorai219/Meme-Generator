@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form action="submit" id="memeForm">
+            <h2>MEME GENERATOR</h2>
+            <p>Type in image address and texts to generate meme!</p>
+            <p>click on the meme to delete!</p>
+            <label for="imgUrl">
+                Image url:
+                <input type="url" id="imgUrl" size="100" name="imgUrl"
+                    placeholder="https://static.boredpanda.com/blog/wp-content/uploads/2014/02/funny-wet-cats-8.jpg">
+            </label>
+            <br>
+            <label for="textTop">
+                Text for top:
+                <input type="text" id="textTop" size="100" name="textTop"
+                    placeholder="What text do you want on top of the meme?">
+            </label>
+            <br>
+            <label for="textBot">
+                Text for bottom:
+                <input type="text" id="textBot" size="100" name="textBot"
+                    placeholder="What text do you want at the bottom of the meme?">
+            </label>
+            <br>
+            <input type="submit" value="Create!" id="memeBtn">
+        </form>
+
+        <div id="meme"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

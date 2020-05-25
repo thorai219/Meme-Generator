@@ -1,0 +1,66 @@
+body {
+    font-family: Montserrat;
+}
+
+.container{
+    width:1000px;
+    margin:0 auto;
+}
+
+form {
+    display: flex-column;
+}
+
+label {
+    display: block;
+    justify-self: space-around;
+}
+
+#memeBtn {
+    width: 200px;
+}
+
+img {
+    object-fit: cover;
+    overflow: hidden;
+    text-align: center;
+}
+
+.memeDiv {
+    display: flex;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    font-size: 30px;
+    text-shadow: -1px 2px 0 #000, 
+                 1px 2px 0 #000, 
+                 2px -1px 0 #000, 
+                 -1px -1px 0 #000;
+}   
+
+.memeDiv:hover {
+    opacity: 0.3;
+}
+
+.textToTop {
+    position: absolute;
+    overflow: auto;
+    word-wrap: break-word;
+    color: white;
+    width: 100%;
+    top: 0px;
+    
+}
+
+.textToBot {
+    position: absolute;
+    overflow: auto;
+    word-wrap: break-word;
+    word-wrap: wrap;
+    color: white;
+    width: 100%;
+    top: 350px;
+}
